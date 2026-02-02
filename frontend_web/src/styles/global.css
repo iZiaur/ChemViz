@@ -1,0 +1,173 @@
+/* ============================================================
+   ChemViz Global Styles — Industrial Dark Theme
+   ============================================================ */
+
+:root {
+  --bg-deep:       #0a0f14;
+  --bg-surface:    #111820;
+  --bg-card:       #161e2a;
+  --bg-card-hover: #1c2636;
+  --bg-input:      #1a2332;
+
+  --text-primary:  #e8ecf0;
+  --text-secondary:#8a9bb0;
+  --text-muted:    #5a6a7d;
+
+  --accent:        #00c8a0;
+  --accent-dim:    rgba(0,200,160,.15);
+  --accent-glow:   rgba(0,200,160,.35);
+  --blue:          #3b82f6;
+  --blue-dim:      rgba(59,130,246,.15);
+  --amber:         #f59e0b;
+  --amber-dim:     rgba(245,158,11,.15);
+  --red:           #ef4444;
+  --red-dim:       rgba(239,68,68,.15);
+  --purple:        #a78bfa;
+  --purple-dim:    rgba(167,139,250,.15);
+
+  --border:        rgba(255,255,255,.07);
+  --radius:        10px;
+  --radius-sm:     6px;
+  --radius-lg:     16px;
+
+  --font-sans:     'Inter', sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+
+  --shadow-card:   0 2px 20px rgba(0,0,0,.3);
+  --shadow-glow:   0 0 24px var(--accent-glow);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Layout ---- */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  width: 100%;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.02em; }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 0.95rem; }
+
+.text-muted   { color: var(--text-muted); font-size: .875rem; }
+.text-accent  { color: var(--accent); }
+.mono         { font-family: var(--font-mono); }
+
+/* ---- Cards ---- */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.card:hover { border-color: rgba(255,255,255,.12); }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-family: var(--font-sans);
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s, box-shadow .2s, transform .1s;
+  white-space: nowrap;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary {
+  background: var(--accent);
+  color: #0a0f14;
+}
+.btn-primary:hover { box-shadow: var(--shadow-glow); }
+.btn-secondary {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { border-color: rgba(255,255,255,.2); }
+.btn-danger {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(239,68,68,.25);
+}
+.btn-danger:hover { background: var(--red); color: #fff; }
+.btn-sm { padding: 5px 11px; font-size: .8rem; }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ---- Inputs ---- */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: .9rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+.input::placeholder { color: var(--text-muted); }
+.input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-dim); }
+
+/* ---- Tags / Badges ---- */
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: .75rem;
+  font-weight: 500;
+}
+.badge-accent  { background: var(--accent-dim);  color: var(--accent); }
+.badge-blue    { background: var(--blue-dim);    color: var(--blue); }
+.badge-amber   { background: var(--amber-dim);   color: var(--amber); }
+.badge-red     { background: var(--red-dim);     color: var(--red); }
+.badge-purple  { background: var(--purple-dim);  color: var(--purple); }
+
+/* ---- Scrollbars ---- */
+::-webkit-scrollbar            { width: 6px; }
+::-webkit-scrollbar-track      { background: transparent; }
+::-webkit-scrollbar-thumb      { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover{ background: rgba(255,255,255,.15); }
+
+/* ---- Utility ---- */
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+.flex     { display: flex; }
+.flex-col { flex-direction: column; }
+.gap-sm   { gap: 8px; }
+.gap      { gap: 16px; }
+.gap-lg   { gap: 24px; }
+.mt-sm    { margin-top: 8px; }
+.mt       { margin-top: 16px; }
+.mt-lg    { margin-top: 24px; }
+.mb-sm    { margin-bottom: 8px; }
+.mb       { margin-bottom: 16px; }
+.w-full   { width: 100%; }

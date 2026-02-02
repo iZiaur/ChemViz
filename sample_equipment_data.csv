@@ -1,0 +1,31 @@
+Equipment Name,Type,Flowrate (L/min),Pressure (bar),Temperature (°C)
+Centrifugal Pump A1,Pump,120.5,8.3,45.2
+Centrifugal Pump A2,Pump,115.8,7.9,43.1
+Positive Displacement Pump B1,Pump,85.2,12.1,38.7
+Shell-and-Tube HX-01,Heat Exchanger,200.0,6.5,110.3
+Shell-and-Tube HX-02,Heat Exchanger,185.5,7.0,105.8
+Plate Heat Exchanger HX-03,Heat Exchanger,150.3,5.8,95.2
+Packed Column C-01,Column,300.0,4.2,155.6
+Tray Column C-02,Column,275.5,3.9,148.9
+Packed Column C-03,Column,310.2,4.5,160.1
+Stirred Tank R-01,Reactor,50.0,10.5,85.3
+Tubular Reactor R-02,Reactor,75.3,9.8,120.7
+Stirred Tank R-03,Reactor,45.8,11.2,78.9
+Vertical Separator S-01,Separator,180.0,12.8,65.4
+Horizontal Separator S-02,Separator,195.5,13.2,70.1
+Cyclone Separator S-03,Separator,160.8,11.5,55.9
+Vacuum Dryer D-01,Dryer,40.0,0.3,95.0
+Rotary Dryer D-02,Dryer,55.5,1.0,105.5
+Spray Dryer D-03,Dryer,62.3,1.2,110.8
+Gate Valve V-01,Valve,200.0,15.0,90.0
+Globe Valve V-02,Valve,120.0,18.5,75.3
+Ball Valve V-03,Valve,250.0,12.0,60.8
+Butterfly Valve V-04,Valve,180.0,8.0,50.2
+Pressure Vessel PV-01,Pressure Vessel,0.0,25.0,130.5
+Pressure Vessel PV-02,Pressure Vessel,0.0,30.0,145.2
+Storage Tank ST-01,Storage Tank,0.0,1.0,25.0
+Storage Tank ST-02,Storage Tank,0.0,1.2,28.5
+Cooling Tower CT-01,Cooling Tower,500.0,2.0,35.0
+Cooling Tower CT-02,Cooling Tower,480.0,1.8,37.5
+Compressor CP-01,Compressor,150.0,20.0,100.0
+Compressor CP-02,Compressor,140.5,22.0,95.3
