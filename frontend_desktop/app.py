@@ -1,10 +1,3 @@
-"""
-ChemViz Studio — High Fidelity Desktop App
-Updates: 
-1. Fixed White Background issues (Force Dark Mode).
-2. Implemented REAL PDF Download logic.
-3. Added Pagination Safety check.
-"""
 
 import sys
 import os
