@@ -202,6 +202,4 @@ The file **sample_equipment_data.csv** includes 30 equipment items across multip
 
 ---
 
-## License
 
-MIT License. Intended for educational and evaluation purposes.
